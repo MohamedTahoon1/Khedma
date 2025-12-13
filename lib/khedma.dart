@@ -1,18 +1,46 @@
 import 'package:flutter/material.dart';
-import 'package:khedma/features/home/view/home_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:khedma/core/route/app_routes.dart';
+import 'package:khedma/core/route/route.dart';
+import 'package:flutter_localizations/flutter_localizations.dart'; // ← ADD THIS
 
+// ignore: must_be_immutable
 class Khedma extends StatelessWidget {
-  const Khedma({super.key});
+  Routes approuts;
+  Khedma({super.key, required this.approuts});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: HomeScreen(),
+    return ScreenUtilInit(
+      designSize: Size(420, 932),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (_, child) {
+        return MaterialApp(
+          locale: const Locale('ar'), // Arabic
+          supportedLocales: const [
+            Locale('ar'),
+            Locale('en'),
+          ],
+
+          localizationsDelegates: const [
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+
+          debugShowCheckedModeBanner: false,
+          title: 'First Method',
+
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
+          ),
+
+          initialRoute: AppRoutes.splash,
+          onGenerateRoute: approuts.generateRoute,
+        );
+      },
     );
   }
 }
