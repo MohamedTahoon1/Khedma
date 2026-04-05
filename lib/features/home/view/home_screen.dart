@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:khedma/core/helpers/space.dart';
-import 'package:khedma/core/shared/custom_text.dart';
-import 'package:khedma/features/home/widgets/custom_card.dart';
-import 'package:khedma/features/home/widgets/search_bar.dart';
+import 'package:khedma/features/home/widgets/allservicesSection.dart';
+import 'package:khedma/features/home/widgets/headerSection.dart';
+import 'package:khedma/features/home/widgets/recentsection.dart';
+
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,23 +13,21 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
-      child: Directionality(
-        textDirection: TextDirection.rtl,
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          appBar: AppBar(
-            title: Center(
-              child: CustomText("اوراقي", weight: FontWeight.bold, size: 20),
+      child: Scaffold(
+        body: SafeArea(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                 HeaderSection(),
+                verticalSpace(22),
+                 RecentSection(),
+                verticalSpace(22),
+                 AllServicesSection(),
+               verticalSpace(22),
+              ],
             ),
-            automaticallyImplyLeading: false,
-            leading: Icon(Icons.menu),
-          ),
-          body: Column(
-            children: [
-              Search_Bar(),
-              verticalSpace(30.h),
-              Expanded(child: ServicesGrid()),
-            ],
           ),
         ),
       ),

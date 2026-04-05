@@ -1,0 +1,123 @@
+{
+  "@@locale": "en",
+  "appname" : "Khedma",
+  "hellomessage" : "Hello there",
+  "header" : "What do you want to do today?",
+  "welcomeTitle": "Welcome to Khedma",
+  "welcomeSubtitle": "Complete government paperwork easily without long waiting lines",
+
+  "everythingTitle": "Everything You Need",
+  "everythingSubtitle": "All the information for your government services in one place",
+
+  "readyTitle": "Ready to Get Started?",
+  "readySubtitle": "Join thousands who've simplified their government paperwork",
+
+  "saveTime": "Save time with smart planning",
+  "avoidMistakes": "Avoid common mistakes",
+  "trackApplications": "Track your applications",
+  "realTimeUpdates": "Get real-time updates",
+
+  "next": "Next",
+  "skip": "Skip",
+  "startNow": "Start Using Khedma",
+
+  "findOffice": "Find Office",
+  "locateOffices": "Locate nearest government offices",
+  "mapView": "Map View",
+  "listView": "List View",
+
+  "distance": "km",
+  "wait": "Wait",
+  "minutes": "min",
+
+  "directions": "Directions",
+  "reportWaitTime": "Report Wait Time",
+
+  "low": "Low",
+  "medium": "Medium",
+  "high": "High",
+
+  "savedServices": "Saved Services",
+  "settings": "Settings",
+
+  "guestUser": "Guest User",
+  "managePreferences": "Manage your preferences",
+
+  "notifications": "Notifications",
+  "language": "Language",
+  "privacyPolicy": "Privacy Policy",
+  "helpSupport": "Help & Support",
+  "appSettings": "App Settings",
+
+  "idRenewal": "ID Renewal",
+  "passportApplication": "Passport Application",
+  "birthCertificate": "Birth Certificate",
+
+  "homeTab": "Home",
+  "mapTab": "Map",
+  "profileTab": "Profile",
+
+  "recent": "Recent",
+  "allServices": "All Services",
+  "searchHint": "Search...",
+
+  "inProgress": "In Progress",
+  "completed": "Completed",
+  "twoDaysAgo": "2 days ago",
+  "oneWeekAgo": "1 week ago",
+
+  "passport": "Passport",
+  "marriageCertificate": "Marriage Certificate",
+  "propertyDeed": "Property Deed",
+  "driversLicense": "Driver's License",
+  "businessLicense": "Business License",
+  "schoolRecords": "School Records",
+  "taxForms": "Tax Forms",
+
+  "openService": "Open {serviceTitle}",
+  "@openService": {
+    "placeholders": {
+      "serviceTitle": {
+        "type": "String"
+      }
+    }
+  },
+
+  "noRouteDefined": "No route defined for {routeName}",
+  "@noRouteDefined": {
+    "placeholders": {
+      "routeName": {
+        "type": "String"
+      }
+    }
+  },
+
+  "distanceWithUnit": "{distance} km",
+  "@distanceWithUnit": {
+    "placeholders": {
+      "distance": {
+        "type": "num"
+      }
+    }
+  },
+
+  "waitWithValue": "Wait: {waitTime}",
+  "@waitWithValue": {
+    "placeholders": {
+      "waitTime": {
+        "type": "String"
+      }
+    }
+  },
+
+  "spanish": "Español",
+  "centralGovOfficeName": "Central Government Office",
+  "centralGovOfficeAddress": "123 Main Street, Downtown",
+  "centralGovOfficePhone": "(555) 123-4567",
+  "centralGovOfficeWaitTime": "15-20 min",
+
+  "northDistrictOfficeName": "North District Office",
+  "northDistrictOfficeAddress": "456 Oak Avenue, North District",
+  "northDistrictOfficePhone": "(555) 234-5678",
+  "northDistrictOfficeWaitTime": "45-60 min"
+}

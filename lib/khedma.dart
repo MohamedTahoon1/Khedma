@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:khedma/core/l10n/app_localizations.dart';
 import 'package:khedma/core/route/app_routes.dart';
 import 'package:khedma/core/route/route.dart';
-import 'package:flutter_localizations/flutter_localizations.dart'; // ← ADD THIS
+import 'package:khedma/core/themes/app_theme.dart';
 
-// ignore: must_be_immutable
+
 class Khedma extends StatelessWidget {
-  Routes approuts;
-  Khedma({super.key, required this.approuts});
+
+  const Khedma({super.key, });
 
   @override
   Widget build(BuildContext context) {
@@ -15,25 +16,16 @@ class Khedma extends StatelessWidget {
       designSize: Size(420, 932),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (_, child) {
+      builder: (context, child) {
         return MaterialApp(
-          locale: const Locale('ar'), // Arabic
-          supportedLocales: const [
-            Locale('ar'),
-            Locale('en'),
-          ],
-
-          localizationsDelegates: const [
-            GlobalMaterialLocalizations.delegate,
-            GlobalWidgetsLocalizations.delegate,
-            GlobalCupertinoLocalizations.delegate,
-          ],
-
+          localizationsDelegates: AppLocalizations.localizationsDelegates ,
+          supportedLocales: AppLocalizations.supportedLocales,
+          locale: const Locale('ar'),
           debugShowCheckedModeBanner: false,
-          title: 'First Method',
+          onGenerateTitle: (context) => AppLocalizations.of(context)!.appname,
           theme: AppTheme.lightTheme,
           initialRoute: AppRoutes.splash,
-          onGenerateRoute: approuts.generateRoute,
+          onGenerateRoute: Routes.generateRoute,
         );
       },
     );

@@ -1,0 +1,123 @@
+{
+  "@@locale": "ar",
+  "appname": "Khedma",
+  "hellomessage": "مرحباً",
+  "header": "ماذا تريد أن تفعل اليوم؟",
+  "welcomeTitle": "أهلاً بك في Khedma",
+  "welcomeSubtitle": "خلّص أوراقك الحكومية بسهولة ومن غير طوابير",
+
+  "everythingTitle": "كل اللي محتاجه",
+  "everythingSubtitle": "كل معلومات الخدمات الحكومية في مكان واحد",
+
+  "readyTitle": "جاهز تبدأ؟",
+  "readySubtitle": "انضم لآلاف الناس اللي سهّلوا معاملاتهم الحكومية",
+
+  "saveTime": "وفّر وقتك بالتخطيط الصح",
+  "avoidMistakes": "اتجنب الأخطاء الشائعة",
+  "trackApplications": "تابع طلباتك",
+  "realTimeUpdates": "استلم تحديثات أول بأول",
+
+  "next": "التالي",
+  "skip": "تخطي",
+  "startNow": "ابدأ استخدام Khedma",
+
+  "findOffice": "دور على مكتب",
+  "locateOffices": "اعرف أقرب المكاتب الحكومية ليك",
+  "mapView": "عرض الخريطة",
+  "listView": "عرض القائمة",
+
+  "distance": "كم",
+  "wait": "الانتظار",
+  "minutes": "دقيقة",
+
+  "directions": "الاتجاهات",
+  "reportWaitTime": "بلّغ عن وقت الانتظار",
+
+  "low": "قليل",
+  "medium": "متوسط",
+  "high": "زحمة",
+
+  "savedServices": "الخدمات المحفوظة",
+  "settings": "الإعدادات",
+
+  "guestUser": "مستخدم ضيف",
+  "managePreferences": "إدارة تفضيلاتك",
+
+  "notifications": "الإشعارات",
+  "language": "اللغة",
+  "privacyPolicy": "سياسة الخصوصية",
+  "helpSupport": "المساعدة والدعم",
+  "appSettings": "إعدادات التطبيق",
+
+  "idRenewal": "تجديد البطاقة",
+  "passportApplication": "تقديم جواز سفر",
+  "birthCertificate": "شهادة ميلاد",
+
+  "homeTab": "الرئيسية",
+  "mapTab": "الخريطة",
+  "profileTab": "الملف الشخصي",
+
+  "recent": "الأحدث",
+  "allServices": "كل الخدمات",
+  "searchHint": "ابحث...",
+
+  "inProgress": "قيد التنفيذ",
+  "completed": "مكتمل",
+  "twoDaysAgo": "منذ يومين",
+  "oneWeekAgo": "منذ أسبوع",
+
+  "passport": "جواز سفر",
+  "marriageCertificate": "قسيمة زواج",
+  "propertyDeed": "عقد ملكية",
+  "driversLicense": "رخصة قيادة",
+  "businessLicense": "رخصة تجارية",
+  "schoolRecords": "سجلات مدرسية",
+  "taxForms": "نماذج ضريبية",
+
+  "openService": "افتح {serviceTitle}",
+  "@openService": {
+    "placeholders": {
+      "serviceTitle": {
+        "type": "String"
+      }
+    }
+  },
+
+  "noRouteDefined": "لا يوجد مسار معرّف لـ {routeName}",
+  "@noRouteDefined": {
+    "placeholders": {
+      "routeName": {
+        "type": "String"
+      }
+    }
+  },
+
+  "distanceWithUnit": "{distance} كم",
+  "@distanceWithUnit": {
+    "placeholders": {
+      "distance": {
+        "type": "num"
+      }
+    }
+  },
+
+  "waitWithValue": "الانتظار: {waitTime}",
+  "@waitWithValue": {
+    "placeholders": {
+      "waitTime": {
+        "type": "String"
+      }
+    }
+  },
+
+  "spanish": "الإسبانية",
+  "centralGovOfficeName": "مكتب الحكومة المركزي",
+  "centralGovOfficeAddress": "١٢٣ الشارع الرئيسي، وسط البلد",
+  "centralGovOfficePhone": "(555) 123-4567",
+  "centralGovOfficeWaitTime": "15-20 دقيقة",
+
+  "northDistrictOfficeName": "مكتب الحي الشمالي",
+  "northDistrictOfficeAddress": "٤٥٦ شارع أوك، الحي الشمالي",
+  "northDistrictOfficePhone": "(555) 234-5678",
+  "northDistrictOfficeWaitTime": "45-60 دقيقة"
+}
