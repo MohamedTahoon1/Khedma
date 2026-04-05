@@ -31,12 +31,7 @@ class Khedma extends StatelessWidget {
 
           debugShowCheckedModeBanner: false,
           title: 'First Method',
-
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
-          ),
-
+          theme: AppTheme.lightTheme,
           initialRoute: AppRoutes.splash,
           onGenerateRoute: approuts.generateRoute,
         );
